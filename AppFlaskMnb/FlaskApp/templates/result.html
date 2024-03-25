@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>rsulatat page</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='resultat.css') }}">
+    </head>
+    <body>
+        <div>
+            <div>
+                {% if res == "non-spam" %}
+                    <h1 class="nonspamemail">
+                        {% if message %}
+                            {{message}}
+                        {% endif %}
+                    </h1>
+                {% else %}
+                    <h1 class="spamemail">
+                        {% if message %}
+                            {{message}}
+                        {% endif %}
+                    </h1>
+                {% endif %}
+            </div>
+            <div class="backpage">
+                <a href="{{url_for('home')}}">back</a>
+            </div>
+        </div>
+    </body>
+</html>

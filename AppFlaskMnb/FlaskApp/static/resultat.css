@@ -1,0 +1,29 @@
+/* Styles for non-spam email */
+.nonspamemail {
+    background-color: rgba(1, 229, 31, 0.675);
+    color: black; /* Change text color as needed */
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+}
+
+/* Styles for spam email */
+.spamemail {
+    background-color: rgba(255, 0, 0, 0.675);
+    color: white; /* Change text color as needed */
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+}
+
+/* Styles for back link */
+.backpage {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.backpage a {
+    color: blue; /* Change link color as needed */
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>page index</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="contact-container">
+    <form action="{{ url_for('home')}}" method="post" class="contact-left">
+        <div class="contact-left-title">
+            <h2>Spam Detection</h2>
+            <hr>
+        </div>
+        <textarea name="emailText" placeholder="Enter Your Message" class="contact-input">{{ datamessage }}</textarea>
+        <button type="submit">Submit</button>
+        
+        <div class="messDiv">
+            {% if message %}
+                <h3>{{ message }}</h3>
+            {% endif %}
+        </div>
+    </form>
+    <div class="contact-right">
+        <img src="{{ url_for('static', filename='right_img.jpg') }}" alt="">
+    </div>
+</div>
+
+</body>
+</html>

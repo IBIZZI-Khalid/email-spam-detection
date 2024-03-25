@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: linear-gradient(#ffdad5,#fff7f9);
+
+}
+
+.contact-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px; ;
+}
+.contact-left-title h2{
+    font-weight: 600;
+    color: #a363aa;
+    font-size: 40px;
+    margin-bottom: 5px;
+
+}
+.contact-left-title hr{
+
+    border: none;
+    width: 200px;
+    height: 5px;
+    background-color: #a363aa;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.contact-input{
+    width: 400px;
+    height: 140px;
+    padding-top:15px ;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: #666;
+    border-radius: 20px;
+    background-color: rgb(133, 22, 22); /* Explicitly set the background color to white */
+}
+
+.contact-left textarea{
+    height: 140;
+    padding-top: 15px;
+    border-radius: 20px;
+    background-color: whitesmoke;
+}
+
+.contact-inputs  :focus{
+    border: 2px solid #ff994f;
+
+}
+.contact-left button{
+    display: flex;
+    align-items:center ;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border-radius: 50px;
+    /* background-color: linear-gradient(270deg,#ff994f,#fa6d86); */
+    background-color:   #a363aa;
+    cursor: pointer;
+    border: none;
+}
+
+.messDiv{
+    color:#a363aa ;
+}
+
+/* .emailmass{
+    border-radius: 20px;
+    color: #fff;
+    gap: 10px;
+    border-radius: 50px;
+    background-color: linear-gradient(270deg,#ff994f,#fa6d86);
+    background-color:   #a363aa;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

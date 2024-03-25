@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>page index</title>
+    </head>
+    <body>
+        {% comment %} <div class="contact-container">
+            <h1>spam email detection</h1>
+            {% if message %}
+                <h3>{{message}}</h3>
+            {% endif %}
+            <form action="{{ url_for('home')}}" method="post">
+                <h3>email message</h3>
+                <label for="emailText">
+                    <input type="text" name="emailText">
+                </label>
+                <button type="submit">send</button>
+            </form>
+        </div> {% endcomment %}
+
+        <div class="contact-container">
+            <form action="{{ url_for('home')}}" method="post" class="contact-left">
+                <div class="contact-left-title">
+                    <h2>Spam Detection</h2>
+                    <hr>
+                </div>
+                <textarea name="emailText" placeholder="Enter Your Message" class="contact-input"></textarea>
+                <button type="submit">Submit <img src="arrow_icon.png" alt=""></button>
+                {% if message %}
+                    <h3>{{message}}</h3>
+                {% endif %}
+            </form>
+            <div class="contact-right">
+               <img src="right_img.png" alt="">
+            </div>
+        </div>
+    </body>
+</html>
